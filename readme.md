@@ -9,3 +9,5 @@ for an existing patient or creates a new one.
 ## Technologies used:
 - Bitrix
 - PHP 7.1
+- Rnova API
+- Dadata API
