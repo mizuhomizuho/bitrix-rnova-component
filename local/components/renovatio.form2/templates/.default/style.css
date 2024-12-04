@@ -1,0 +1,62 @@
+html:has(.renovatio-form2-box [data-code="ONLINE_RECEPTION"].nav-item.active
+) .js-renovatio-form2-doctor-item:not([data-types*="|ONLINE_RECEPTION|"]),
+html:has(.renovatio-form2-box [data-code="FACE_TO_FACE_RECEPTION"].nav-item.active
+) .js-renovatio-form2-doctor-item:not([data-types*="|FACE_TO_FACE_RECEPTION|"]),
+html:has(.renovatio-form2-box [data-code="ONLINE_RECEPTION"].nav-item.active
+) .js-renovatio-form2-department-item:not([data-types*="|ONLINE_RECEPTION|"]) ,
+html:has(.renovatio-form2-box [data-code="FACE_TO_FACE_RECEPTION"].nav-item.active
+) .js-renovatio-form2-department-item:not([data-types*="|FACE_TO_FACE_RECEPTION|"]) {
+    display: none;
+}
+
+.renovatio-form2-modal-time-def-text {
+    font-size: 17px;
+    color: red;
+}
+
+.renovatio-form2-dadata-box {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 10px 15px;
+    position: absolute;
+    border: 1px solid #78c562;
+    margin-top: 3px;
+}
+    .renovatio-form2-dadata-item {
+        cursor: pointer;
+        padding: 3px 0;
+        font-size: 17px;
+    }
+
+.renovatio-form2-form[data-success=true] {
+    position: relative;
+}
+    .renovatio-form2-form[data-success=true]:after {
+        content: '';
+        position: absolute;
+        bottom: 166px;
+        left: 50%;
+        width: 62%;
+        transform: translateX(-50%);
+        aspect-ratio: 354 / 246;
+        background-image: url(./images/form.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+    }
+    @media (width <= 1280px) {
+        .renovatio-form2-form[data-success=true]:after {
+            bottom: 151px;
+        }
+    }
+    @media (width <= 768px) {
+        .renovatio-form2-form[data-success=true]:after {
+            bottom: 104px;
+            width: 53%;
+        }
+    }
+    @media (width <= 767px) {
+        .renovatio-form2-form[data-success=true]:after {
+            bottom: 122px;
+        }
+    }
